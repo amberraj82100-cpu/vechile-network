@@ -1,0 +1,50 @@
+{
+  "simulation": {
+    "step_ms": 100,
+    "duration_s": 30,
+    "communication_range_m": 300,
+    "random_seed": 7
+  },
+  "radio": {
+    "carrier_frequency_ghz": 5.9,
+    "bandwidth_mhz": 20,
+    "resource_blocks": 50,
+    "slots_per_second": 1000,
+    "resource_pool_size": 20,
+    "tx_power_dbm": 23,
+    "noise_figure_db": 7,
+    "noise_floor_dbm": -96,
+    "path_loss_exponent": 2.2,
+    "shadowing_std_db": 3.0,
+    "interference_radius_m": 250,
+    "sinr_thresholds_db": {
+      "QPSK": -2.0,
+      "16QAM": 5.0,
+      "64QAM": 12.0,
+      "256QAM": 18.0
+    },
+    "bler": {
+      "QPSK": 0.02,
+      "16QAM": 0.08,
+      "64QAM": 0.18,
+      "256QAM": 0.35
+    }
+  },
+  "dissemination": {
+    "max_ttl": 3,
+    "forwarding": true,
+    "duplicate_filtering": true
+  },
+  "cam": {
+    "interval_s": 0.1
+  },
+  "dcc": {
+    "enabled": true,
+    "low_load": 0.25,
+    "medium_load": 0.5,
+    "high_load": 0.75,
+    "low_rate_hz": 10,
+    "medium_rate_hz": 5,
+    "high_rate_hz": 2
+  }
+}

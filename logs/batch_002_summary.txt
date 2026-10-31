@@ -1,0 +1,5 @@
+Batch 2
+Duration: 10.0s
+Delivered: 198
+Lost: 228
+Collisions: 0

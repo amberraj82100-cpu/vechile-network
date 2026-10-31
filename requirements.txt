@@ -1,0 +1,2 @@
+# No third-party packages required for the core simulator.
+# Optional SUMO integration: install traci separately.
